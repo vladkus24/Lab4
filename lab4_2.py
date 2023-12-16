@@ -64,8 +64,13 @@ for i in range(8):
         if not (i == row and j == col) and (i == row or j == col):
             board[i][j] = '*'
 
+row_names = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
 # виводе дошку разом із положеням фігури
 for i in range(7, -1, -1):
+    print(row_names[i], end=' ')
     for j in range(8):
         print(board[i][j], end=' ')
     print()
+
+print('  1 2 3 4 5 6 7 8')

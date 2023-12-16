@@ -18,15 +18,10 @@ numbers = []
 for num_str in numbers_str_list:
     numbers.append(int(num_str))
 
-result = []
+for i in range(len(numbers)):
+    if numbers[i] == 0:
+        numbers.pop(i)
+        numbers.append(0)
 
-for num in numbers:
-    if num != 0:
-        result.append(num)
-
-for num in numbers:
-    if num == 0:
-        result.append(num)
-
-print(result)
+print(numbers)
 
